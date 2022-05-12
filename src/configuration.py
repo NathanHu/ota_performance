@@ -5,7 +5,7 @@ test_exe = '"C:/Users/LCL-Spectrum-03/Desktop/ota_automation/packages/IxChariotP
 test_results = 'C:/Users/LCL-Spectrum-03/Desktop/OTA Results/Test Runs/'
 test_iterations = 1
 test_duration = 60
-test_streams = [10]     # List of stream quantities to test. Ex. [1, 2, 3]
+test_streams = [7, 10]     # List of stream quantities to test. Ex. [1, 2, 3]
 
 # Customize topology data to extract during testing
 test_data = ['throughput',

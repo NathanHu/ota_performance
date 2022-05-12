@@ -181,7 +181,17 @@ class RunOTA:
                         self._results_avg[client][stream][datapoint] = s_avg
                     except:
                         continue
-              
+
+
+    def console_output(self):
+        print('RUN DATA: ')
+        for k, v in self._results.items():
+            print(k, '\t--', v)
+        print('\n')
+        print('AVERAGE DATA: ')
+        for k, v in self._results_avg.items():
+            print(k, '\t\t--', v)
+
 
 if __name__ == "__main__":
     test = RunOTA('192.168.1.251')
@@ -205,8 +215,10 @@ if __name__ == "__main__":
     test._plotter = plot.PlotData(test._test_info['build'])
     out = test.run_test()
     test.calc_avg()
-    
-    print('RUN DATA: ',test._results)
-    print('AVERAGE DATA: ', test._results_avg)
+
+    #print('RUN DATA: ',test._results)
+    #print('AVERAGE DATA: ', test._results_avg)
+    # FORMATTED CONSOLE OUTPUT
+    test.console_output()
     
     test._log_instance.log_test(test._test_info, test._results_avg, test._client_data)
