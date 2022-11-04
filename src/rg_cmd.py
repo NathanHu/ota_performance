@@ -2,7 +2,7 @@
 import time
 import datetime
 import re
-import telnet_rg
+from . import telnet_rg
 # import telnetlib
 
 

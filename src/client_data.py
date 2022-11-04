@@ -1,5 +1,5 @@
-import ap4971_cmd as ap4971
-import configuration
+from . import ap4971_cmd as ap4971
+from . import configuration
 import re
 
 class ClientData:

@@ -1,0 +1,8 @@
+RSSI CMD)
+wl -i wl[radio] sta_info [MAC of client] | grep smoothed
+
+
+IDENTIFY MAC FROM CLIENT IP)
+debug>magic> show ip lan
+
+ls -l | awk '$1' 

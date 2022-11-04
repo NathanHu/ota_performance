@@ -1,8 +1,8 @@
-from context import run_ota, dut_info
+from hef_context import run_ota, dut_info
 
 class HEF():
     def __init__(self):
-        self.dut = dut_info
+        self.dut = dut_info.DUT()
         self._ap_addr = ''
         self._location = ''
         self._build = ''

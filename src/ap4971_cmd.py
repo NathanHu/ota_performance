@@ -1,9 +1,8 @@
-
 import time
 import datetime
 import re
-import telnet_rg
-import common_functions
+from . import telnet_rg
+from . import common_functions
 
 
 

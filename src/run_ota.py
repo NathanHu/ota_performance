@@ -6,10 +6,10 @@ import argparse
 import subprocess 
 import string
 import datetime
-import ota_log as log
-import client_data as topology
-import plot_data as plot
-import configuration
+from . import ota_log as log
+from . import client_data as topology
+from . import plot_data as plot
+from . import configuration
 #import .report_ota as report
 
 class RunOTA:

@@ -1,6 +1,6 @@
 
-import configuration
-import rg_cmd
+from . import configuration
+from . import rg_cmd
 import datetime
 import re
 import math

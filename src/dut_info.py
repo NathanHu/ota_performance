@@ -4,7 +4,7 @@ class DUT():
         self.iterations = 1
 
         self.bgw210 = {
-            'ap_addr'   : '',
+            'ap_addr'   :   '',
             'build'     :   'BGW320-PI17-MR2'
         }
 
@@ -16,7 +16,3 @@ class DUT():
         self.cgw450 = {
 
         }
-        self._ap_addr = ''
-        self._location = ''
-        self._build = ''
-        self._iterations = 1

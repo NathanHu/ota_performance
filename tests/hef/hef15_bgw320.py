@@ -1,22 +1,14 @@
-from context import run_ota
+import hef
 
 def run():
-    test = run_ota.RunOTA('192.168.1.246')
-    test._test_info['location'] = 'he15'
-    test._test_info['build'] = 'BGW320-PI17-MR2'
-    test._test_iterations = 1
+    hef_code = 15
+    test = hef.HEF()
 
-    print(test._test_info['build'])
-    print(test._test_info['location'])
+    test._ap_addr = test.dut.bgw320['ap_addr']
+    test._location = 'he15'
+    test._build = test.dut.bgw320['build']
+    test._iterations = 1
 
-    out = test.run_test()
-    test.calc_avg()
+    test.run()
 
-    print('RUN DATA: ',test._results)
-    print('AVERAGE DATA: ', test._results_avg)
-
-    test._log_instance.log_test(test._test_info, test._results_avg, test._client_data)
-
-
-if __name__ == '__main__':
-    run()
+run()

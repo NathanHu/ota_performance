@@ -1,8 +1,8 @@
 from context import run_ota
 
-test = run_ota.RunOTA('192.168.1.246')
+test = run_ota.RunOTA('192.168.1.252')
 test._test_info['location'] = '161'
-test._test_info['build'] = 'BGW210-PI17-2.17.5-MR2'
+test._test_info['build'] = 'BGW210-PI19-3.19.3-MR3'
 test._test_iterations = 1
 
 print(test._test_info['build'])

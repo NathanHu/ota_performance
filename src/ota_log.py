@@ -2,7 +2,7 @@ import sys
 import csv
 import datetime
 import os
-import configuration
+from . import configuration
 
 class LogOTA:
     def __init__(self):
